@@ -7,8 +7,8 @@ class Bottles
     n > 0 ? _normal_verse(n) : _final_verse
   end
 
-  def verses(arg1, arg2)
-    arg1.downto(arg2).map { |n| verse(n) }.join("\n")
+  def verses(starting_bottle_count, ending_bottle_count)
+    starting_bottle_count.downto(ending_bottle_count).map { |n| verse(n) }.join("\n")
   end
 
   private
